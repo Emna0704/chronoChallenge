@@ -36,7 +36,7 @@ const Counter = ({ increment, label }) => {
     <>
     <div className="counter-container">
       <h3>{label}</h3>
-      <p className="counter-value">Count: {count}</p>
+      <p>Count: {count}</p>
       <div className="counter-buttons">
         <Button onClick={handleStart} disabled={isRunning || count >= 20} text={"start"}/>
         <Button onClick={handleStop} disabled={!isRunning} text={"Stop"}/>
